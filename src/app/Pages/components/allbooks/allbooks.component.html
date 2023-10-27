@@ -1,0 +1,58 @@
+<section class="featured-section">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-md-12 text-center mt-5">
+              <h2 class="text-white">{{books.Id}}</h2>
+              <p class="text-white">Lorem hdbskd jfksdd ksjdk</p>
+                          </div>
+      </div>
+<div class="row">
+  <div class="col-lg-3">
+      <app-post-cart></app-post-cart>
+  </div>
+  <div class="col-lg-3">
+      <app-post-cart></app-post-cart>
+  </div>
+  <div class="col-lg-3">
+      <app-post-cart></app-post-cart>
+  </div>
+  <div class="col-lg-3">
+      <app-post-cart></app-post-cart>
+  </div>
+
+</div>
+  </div>
+
+</section>
+
+
+
+<table class="table">
+    <thead>
+      <tr>
+       
+        <th scope="col">Id</th>
+        <th scope="col">Title</th>
+        <th scope="col">Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let book of books">
+        <th scope="row"></th>
+        <td>{{book.Id}}</td>
+        <td>{{book.Title}}</td>
+        <td>{{book.Description}}</td>
+      </tr>
+      <tr>
+        <th scope="row"></th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2">Larry the Bird</td>
+        <td>@twitter</td>
+      </tr>
+    </tbody>
+  </table>
